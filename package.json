@@ -1,21 +1,22 @@
 {
-  "name": "web-tooling-005",
+  "name": "web-tooling-final",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "eslint": "^8.10.0",
     "github-standard-labels": "^1.1.2",
+    "prettier-plugin-eslint-test": "^0.9.4-beta.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "react-script lint",
+    "lint": "eslint src",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",

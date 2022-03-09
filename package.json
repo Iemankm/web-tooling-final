@@ -23,7 +23,12 @@
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
+    "plugins": ["prettier"],
+     "rules": {
+         "prettier/prettier": "error"
+    },
     "extends": [
+      "plugin:prettier/recommended",
       "react-app",
       "react-app/jest"
     ],
@@ -36,6 +41,7 @@
           "import/no-anonymous-default-export": "off"
         }
       }
+      
     ]
   },
   "browserslist": {

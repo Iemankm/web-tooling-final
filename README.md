@@ -1,6 +1,4 @@
-npm version patch
-npm publishnpm version patch
-npm publish
+https://img.shields.io/npm/v/n
 
 This repo contains all the code for "web tooling and modern setup" final project ✨.
 
@@ -33,4 +31,3 @@ Installs eslint-config-prettier
 
 
 
-<img alt="AppVeyor tests" src="https://img.shields.io/appveyor/tests/Iemankm/web-tooling-final">

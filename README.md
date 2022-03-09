@@ -1,5 +1,3 @@
-### `https://img.shields.io/npm/v/n`
-
 This repo contains all the code for "web tooling and modern setup" final project ✨.
 
 The application is about fetching api data.. The user can click a button from the list of photographer and a photo taken by that author will show up on a div next to the buttons.

@@ -1,3 +1,10 @@
+npm version patch
+npm publishnpm version patch
+npm publish
+
+This repo contains all the code for "web tooling and modern setup" final project ✨.
+
+The application is about fetching api data.. The user can click a button from the list of photographer and a photo taken by that author will show up on a div next to the buttons.
 ### "https://picsum.photos/v2/list"
 
 Api endpoint
@@ -17,3 +24,13 @@ Start test run
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
+
+### `npm install eslint --save-dev`
+Installs ESLint using npm
+
+### `npm install --save-dev eslint-config-prettier`
+Installs eslint-config-prettier
+
+
+
+<img alt="AppVeyor tests" src="https://img.shields.io/appveyor/tests/Iemankm/web-tooling-final">

@@ -5,6 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "eslint": "^8.10.0",
+    "github-standard-labels": "^1.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",

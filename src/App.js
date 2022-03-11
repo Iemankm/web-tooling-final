@@ -7,17 +7,7 @@ export const ENDPOINT = "https://picsum.photos/v2/list"
 const fetchJSON = async endpoint => await fetch(endpoint).then(x => x.json())
 
 export const useGetData = () => {
-	const [data, setData] = useState(null)
-
-	useEffect(() => {
-		const pullData = async () => {
-			const response = await fetchJSON(ENDPOINT)
-			console.log({ response })
-			setData(response)
-		}
-
-		pullData()
-	}, [setData])
+	const [data] = useState(null)
 
 	return data
 }

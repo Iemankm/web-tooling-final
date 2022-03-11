@@ -6,6 +6,10 @@ The application is about fetching api data.. The user can click a button from th
 
 Api endpoint
 
+### "https://web-tooling-final-storybook-iemankm.vercel.app/"
+
+Deployed Storybook
+
 ### `npm install`
 
 Installs npm packages

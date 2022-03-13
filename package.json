@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint:js": "eslint src/**/*.js",
-    "lint": "npm run lint:js",
+    "lint": "eslint src",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",

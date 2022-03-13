@@ -16,16 +16,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint src",
+    "lint:js": "eslint src/**/*.js",
+    "lint": "npm run lint:js",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
-    "plugins": ["prettier"],
-     "rules": {
-         "prettier/prettier": "error"
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
     },
     "extends": [
       "plugin:prettier/recommended",
@@ -41,7 +44,6 @@
           "import/no-anonymous-default-export": "off"
         }
       }
-      
     ]
   },
   "browserslist": {
@@ -78,5 +80,18 @@
     "prettier": "2.5.1",
     "react-test-renderer": "^17.0.2",
     "webpack": "^5.70.0"
-  }
+  },
+  "description": "This repo contains all the code for \"web tooling and modern setup\" final project ✨.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iemankm/web-tooling-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iemankm/web-tooling-final/issues"
+  },
+  "homepage": "https://github.com/Iemankm/web-tooling-final#readme"
 }

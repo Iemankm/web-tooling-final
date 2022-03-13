@@ -1,25 +1,32 @@
-name: Lint
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+name: Lint 
+
+on: 
+pull_request:
+branches:
+- development
+- staging
+- production
+
+env:
+NODE_VERSION: 14
 
 jobs:
-  run-linters:
-    name: Run linters
-    runs-on: ubuntu-latest
+linting:
+name: Linting 
+runs-on: ubuntu-latest 
+steps: 
 
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
+- name: Install NodeJS
+uses: actions/setup-node@v2
+with:
+node-version: ${{ env.NODE_VERSION }}
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
+- name: Code Checkout
+uses: actions/checkout@v2
 
-      
+- name: Install Dependencies
+run: npm ci
+
+- name: Code Linting
+run: npm run lint

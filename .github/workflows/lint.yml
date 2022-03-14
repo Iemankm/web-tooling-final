@@ -2,9 +2,9 @@ name: lint
 on:
   pull_request:
   branches:
-     - main
+    - main
 
-      jobs:
+jobs:
   test:
     name: Check the source code
     runs-on: ubuntu-latest
